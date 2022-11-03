@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacto</title>
+
+    <style>
+        body {
+        background-color: darkgreen;
+        }
+    </style>
 </head>
 <body>
+    <div>
+    <h2> Dejanos tu consulta </h2>
+
+    <form action="mailto:pablito8108@gmail.com" method="post"> <div class="elem-group"> 
+        <input type="text" id="name" style="width:100px;margin-top:40px;min-width:320px" name="visitor_name" placeholder="Su nombre aquí..." pattern=[A-Z\sa-z]{3,20} required> </div> 
+        <input type="email" id="email" style="width:100px;margin-top:40px;min-width:320px" name="visitor_email" placeholder="ejemplo@email.com" required> </div>
+        <input type="text" id="ciudad" style="width:100px;margin-top:40px;min-width:320px" name="visitor_email" placeholder="Ciudad" required> </div>
+        <input type="number" style="width:100px;margin-top:40px;min-width:320px" id="Telefono de Contacto" name="visitor_name" placeholder="Numero de telefono"  required>
+        <input type="text" id="title" style="width:100px;margin-top:40px;min-width:320px" name="email_title" required placeholder="Problema/Consulta" pattern=[A-Za-z0-9\s]{8,60}> 
+        <textarea id="message" name="visitor_message" style="width:100px;margin-top:40px;min-width:320px" placeholder="Escribe tu mensaje aquí." required></textarea> </div> 
+        <button type="submit">Enviar Consulta</button>  <button type="reset">Borrar todo</button> 
+
+    </div>
     <h1> <a href="../index.html"> Volver</a> </h1>
 </body>
 </html>

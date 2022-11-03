@@ -1,10 +1,44 @@
 * {
+    margin:0px;
+}
+
+body {
+    background-color: darkgreen;
+ }
+
+.titulo {
     color: antiquewhite;
 }
 
-
 .contenedor {
-    display: flexbox;
+    display: flex;
+    flex-direction: row;
     background-color: black;
 
+}
+
+
+
+.lista {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: right;
+    color: antiquewhite;
+}
+
+.parrafo1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: black !important;
+    background-color: green;
+}
+
+#imagen {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 30%;
+}
+
+.contimagen {
+    background-color: silver;
 }
