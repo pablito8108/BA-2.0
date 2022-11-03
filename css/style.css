@@ -1,0 +1,10 @@
+* {
+    color: antiquewhite;
+}
+
+
+.contenedor {
+    display: flexbox;
+    background-color: black;
+
+}
