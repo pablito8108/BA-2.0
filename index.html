@@ -6,38 +6,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi pagina de prueba</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet"/>
+    <!-- Bootstrasp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"
+></script>
 </head>
-<body>
-    <div class="contenedor">
+    <body>
 
-        <h1 class="titulo"> Prueba piloto</h1>
+        <header>
+            <nav class="navbar navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Club Atletico Banfield</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú principal</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="pages/sucursales.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sucursales
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Argentina</a></li>
+                            <li><a class="dropdown-item" href="#">Europa</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Resto del mundo</a></li>
+                          </ul>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/quienes.html">Quienes somos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/video.html">Video presentacion</a>
+                          </li>
+                        </li>
+                      </ul>
+                      
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/banfield_campeon_noticia.jpg" class="d-block w-100" alt="campeon 2009">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Banfield campeon 2009</h5>
+                  <p>El plantel entero levantando la copa tan deseada.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-        <ul>
-            <li> <a href="pages/contacto.html">Contacto</a> </li>
-            <li> <a href="pages/sucursales.html">Sucursales</a> </li>
-            <li><a href="pages/quienes.html">Quienes somos</a></li>
-            <li><a href="pages/video.html">Video presentacion</a></li>
-        </ul>
-    </div>
-    <div class="parrafo1">
-        <p>
-            Agustín Urzi sentenció el partido en la primera chance clara para el Taladro, a los 22 minutos del primer tiempo. <br> El delantero sacó un violento zurdazo de larga distancia y sorprendió a Gaspar Servio, quien calculó mal la trayectoria de la pelota, justo cuando el Canalla tenía la pelota.
-        </p>
-    
-        <p>
-            El complemento mostró lo mejor de Rosario Central en el comienzo, cuando presionó más alto y buscó con los ingresos de los delanteros <br> Alan Marinelli y Gustavo Ramírez, como al minuto, cuando Ismael Cortez mandó un centro desde la derecha y Marinelli remató cerca del poste derecho luego<br> de un rebote en Alejandro Maciel, y a los cuatro cuando Ignacio Malcorra lanzó un centro desde la izquierda que tocó Ramírez, pero no llegó Marinelli a empujarla por atrás.
-        </p>
-    
-        <p>
-            Y más aún a los 21 minutos, cuando Buonanotte mandó un tiro libre pasado desde la derecha, Infantino la metió de cabeza al segundo palo<br> y Cristian Báez cabeceó solo, pero otra vez Cambeses la sacó, volando hacia su izquierda sobre la línea, en su segunda gran atajada del partido.
-        </p>
-    
-    </div>
 
-    <div class="contimagen">
+          <div class="clearfix">
+            <img src="https://media.tycsports.com/files/2018/08/06/18310/nicolas-bertolo.jpg" width="250" class="col-md-6 float-md-end mb-3 ms-md-3" alt="bertolo" >
+          
+            <p>
+              A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+            </p>
+          
+            <p>
+              As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+            </p>
+          
+            <p>
+              And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+            </p>
+          </div>
     
-        <img id="imagen" src="https://media.tycsports.com/files/2018/08/06/18310/nicolas-bertolo.jpg" alt="elnico" width="600 px">
+        
+        <div clasS="redes">
+        <div class="tw">
+            <a class="twitter-timeline" data-lang="es" data-width="340" data-height="500" data-theme="light" href="https://twitter.com/CAB_oficial?ref_src=twsrc%5Etfw">Tweets by CAB_oficial</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    </div>
+            </div>
+
+            <div class="fb">
+                <div class="tw">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FClubAtleticoBanfield&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=178708015515335" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+            
     
-</body>
+            </div>
+
+            <footer class="bg-dark text-center text-white">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                  <!-- Section: Social media -->
+                  <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+              
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+              
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/cab_oficial" role="button"
+                      ><i class="fab fa-instagram fa-6x"></i>Instagram</a>
+              
+                    
+                  <!-- Section: Social media -->
+                </div>
+                <!-- Grid container -->
+              
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                  © 2022 Copyright - BS MULTIPLICA 2.0:
+                  <a class="text-white" href="https://www.instagram.com/polyfansok">Pablo Melillo</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+        
+
+            
+    </body>
+</html>

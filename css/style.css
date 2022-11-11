@@ -7,7 +7,8 @@ body {
  }
 
 .titulo {
-    color: antiquewhite;
+    color: #7532F9;
+    font-family: 'Kolker Brush', cursive;
 }
 
 .contenedor {
@@ -41,4 +42,22 @@ body {
 
 .contimagen {
     background-color: silver;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb .tw{
+    margin: 50px;
+}
+
+.footer{
+    display: flex;
+}
+
+.fab fa-instagram{
+    color: bisque;
 }
